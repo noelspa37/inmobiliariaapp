@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import Firebase, { FirebaseContext } from './server/firebase'
+import Firebase, { FirebaseContext } from './server'
 
 //const FirebaseContext = React.createContext()
 
