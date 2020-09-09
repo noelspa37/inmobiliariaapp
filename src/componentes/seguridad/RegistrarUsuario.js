@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Container, Avatar, Typography, Grid, TextField } from '@material-ui/core'
+import { Container, Avatar, Typography, Grid, TextField, Button } from '@material-ui/core'
 import LockOutLineIcon from '@material-ui/icons/LockOutlined'
 
 const style = {
@@ -16,6 +16,10 @@ const style = {
     form: {
         width: '100%',
         marginTop: 10
+    },
+    submit: {
+        marginTop: 15,
+        marginBottom: 20
     }
 }
 
@@ -34,6 +38,22 @@ class RegistrarUsuario extends Component {
                         <Grid container spacing={2}>
                             <Grid item md={6} xs={12}>
                                 <TextField name='nombre' fullWidth label='Ingrese su nombre' />
+                            </Grid>
+                            <Grid item md={6} xs={12}>
+                                <TextField name='apellido' fullWidth label='Ingrese sus apellidos' />
+                            </Grid>
+                            <Grid item md={6} xs={12}>
+                                <TextField name='email' fullWidth label='Ingrese su e-mail' />
+                            </Grid>
+                            <Grid item md={6} xs={12}>
+                                <TextField type='password' name='password' fullWidth label='Ingrese su password' />
+                            </Grid>
+                        </Grid>
+                        <Grid container justify='center'>
+                            <Grid item md={6} xs={12}>
+                                <Button type='submit' variant='contained' fullWidth size='large' color='primary' style={style.submit}>
+                                    Registrar
+                                </Button>
                             </Grid>
                         </Grid>
                     </form>
